@@ -1,0 +1,12 @@
+version: '3'
+services:
+   digital_garden:
+      image: digital_garden
+      build: .
+      container_name: garden
+      ports:
+        - 3000:3000
+      volumes:
+        - ./posts:/app/posts
+        - ./public/images:/app/public/images
+ 
